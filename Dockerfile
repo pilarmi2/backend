@@ -19,6 +19,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 ENV PORT=8000
 EXPOSE 8000
 
+ENV HOST="0.0.0.0"
 ENV BUSINESS_SERVICE="https://scoring-business-service.azurewebsites.net"
 
 # Start service
