@@ -1,5 +1,12 @@
 # Backend
 
+![image](architecture.png)
+
+Backend exposes the only public endpoint of the entire system. On this endpoint, users can get a score for a given municipality.
+
+## Scoring system setup
+- For the easiest way to run the whole system, go to www.github.com/pilarmi2/scoring-system-setup. If you want to run the service locally, continue reading.
+
 ## Prerequisites
 - Python 3.9 or higher is required for localized execution.
 - Required libraries are listed in `requirements.txt`.
@@ -15,7 +22,11 @@
 ```pip install -r requirements.txt```
 
 ## System variables
-- There are several environment variables that need to be set. All necessary variables can be found in the Dockerfile.
+- The following environment variables need to be set for proper functionality.
+  - **PORT** (Port on which the service will run)
+  - **HOST** (Address the service will run on)
+  - **BUSINESS_SERVICE** (Business-service address)
+
 ## Usage
 1. Run the main script using Python 3.9:
 
